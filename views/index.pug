@@ -1,0 +1,18 @@
+html
+	head
+		link(rel='stylesheet', href='public/css/style.css')
+		title= title
+	body
+		h1= title
+		h2= message_a
+		#commands
+			p Commands runned successifully
+			.control.commands= message_b
+		#hours
+			p Script started at
+			.control.hours= message_c
+			p Current time
+			.control.hours= message_d
+		<br />
+		#warning
+			p Please keep in mind that after 30 minutes of inactivity, Heroku will shut down this app <br />and you'll need to revisit this website to boot it up again!
